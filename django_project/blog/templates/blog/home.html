@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% block title %}
+My New Blog
+{% endblock %}
+
+{% block content %}
+{% for post in posts %}
+<div class="card">
+    <div class="card-header text-primary">
+        <h1>{{post.title}}</h1>
+    </div>
+    <div class="card-body text-success">
+        By {{post.author}} <br>
+        <i>{{ post.date_posted|date:"F d, Y" }}</i> <br>
+        {{post.content}}
+        <br><br>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
