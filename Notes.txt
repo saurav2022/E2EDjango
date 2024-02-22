@@ -1,0 +1,9 @@
+Adding code to repo
+===================
+git init
+git add . --all
+git status
+git commit -m "Blog App in Django - 1st commit"
+git branch -M main
+git remote add origin https://github.com/saurav2022/E2EDjango.git
+git push -u origin main
